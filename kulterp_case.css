@@ -1,0 +1,81 @@
+/* --------------------------------------- */
+/* ----- Subpage Specific Styles ----- */
+/* --------------------------------------- */
+
+body {
+    font-size: var(--font-size-small);
+    font-family: var(--font-stack);
+    color: var(--white-1);
+    line-height: var(--line-height-normal);
+    background: var(--black);
+}
+
+/* Container for the case study */
+.case-study {
+    max-width: var(--container-medium-width);
+    margin: 0 auto;
+    padding: var(--gutter-normal);
+}
+
+.work__image-box {
+    margin: var(--gutter-huge) 0;
+    text-align: center; /* Center the iframe */
+}
+
+iframe {
+    border-radius: 8px; /* Rounded corners for the iframe */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h4, h5 {
+    color: var(--white);
+    margin-top: var(--gutter-small);
+}
+
+h4 {
+    font-size: var(--font-size-medium);
+    font-weight: 600; /* Slightly bolder for emphasis */
+}
+
+h5 {
+    font-size: var(--font-size-normal);
+    font-weight: 400; /* Normal weight for subheadings */
+}
+
+p {
+    margin: var(--gutter-small-1) 0;
+    color: var(--white-1); /* Consistent paragraph color */
+}
+
+/* Link Styles */
+a {
+    color: var(--pink);
+    text-decoration: none; /* No underline for links */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--white); /* Change color on hover */
+}
+
+/* Responsive Adjustments */
+@media(max-width: 900px) {
+    .case-study {
+        padding: var(--gutter-small); /* Smaller padding on mobile */
+    }
+
+    iframe {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Adjust height to maintain aspect ratio */
+    }
+}
+
+@media(max-width: 500px) {
+    h4 {
+        font-size: var(--font-size-medium-1);
+    }
+
+    h5 {
+        font-size: var(--font-size-small);
+    }
+}

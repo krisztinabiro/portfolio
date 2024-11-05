@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('./fonts/IBM_Plex_Sans/IBMPlexSans-Italic.ttf') format('ttf');
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+    url('./images/banner_bg.png');
+    color: #333;
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+.back-button-container {
+    padding-top: 1.5rem;
+}
+
+.back-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.back-arrow {
+    width: 48px;
+    height: auto;
+    display: block;
+}
+
+/* CV Container with Left-Aligned Text */
+.cv-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fcf9f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1%;
+    text-align: left; /* Set default text alignment to left */
+}
+
+/* Centered Header Text */
+.cv-header {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #333;
+    text-align: center;
+}
+
+.name {
+    font-size: 2em;
+    margin: 0;
+    color: #333;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.2em;
+    color: #555;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+}
+
+/* Section Styles */
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Experience and Education Styles */
+.job, .degree {
+    margin-bottom: 15px;
+}
+
+.job h3, .degree h3 {
+    font-size: 1.2em;
+    margin: 0;
+    color: #444;
+}
+
+.job-details, .institution, .dates {
+    font-size: 0.9em;
+    color: #666;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+ul.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 0.9em;
+}
+
+.experience .company {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.company-logo {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 8px;
+}
+
+.company-name {
+    font-size: 0.9em; /* Slightly smaller than main font */
+    font-style: italic;
+    color: #555; /* Adjust color if needed */
+}
+
+
+.button-container {
+    text-align: center;
+}
+
+#download-btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #01172d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#download-btn:hover {
+    background-color: #000000;
+}
+
+#download-btn:active {
+    background-color: #000000;
+    transform: scale(0.98);
+}
+
+#download-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(55, 55, 55, 0.5);
+}
