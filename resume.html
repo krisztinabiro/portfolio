@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krisztina Biro | CV</title>
     <link rel="stylesheet" href="resume.css">
-    <link rel="shortcut icon" type="image/png" href="images/title_logo.png" />
+    <link rel="shortcut icon" type="image/png" href="./images/title_logo.png" />
 
 </head>
 <body>
@@ -127,9 +127,18 @@ enhanced my management and teamwork skills.
             </ul>
         </section>
         <div class="button-container">
-            <a href="CV_Krisztina Biro.pdf" download></a>
-            <button id="download-btn">Download PDF</button>
-        </div>
+            <button id="download-btn" onclick="downloadPDF()">Download PDF</button>
+            </div>
+        
     </div>
     
 </html>
+
+<!-- Button to trigger download -->
+
+
+<script>
+function downloadPDF() {
+  window.open("CV_Krisztina Biro.pdf", "_blank");
+}
+</script>
