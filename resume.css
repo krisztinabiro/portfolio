@@ -1,3 +1,4 @@
+/* General Styles */
 @font-face {
     font-family: 'IBM Plex Sans';
     font-style: normal;
@@ -11,25 +12,15 @@
     font-weight: 400;
     src: url('./fonts/IBM_Plex_Sans/IBMPlexSans-Italic.ttf') format('ttf');
 }
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    
     line-height: 1.6;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+    padding: 20px;
+    background: linear-gradient(rgba(0,0,0, .2), rgba(0,0,0, .6)), 
     url('./images/banner_bg.png');
     color: #333;
 }
-
-.main-container {
-    display: flex;
-    align-items: flex-start; /* Align items to the top */
-    max-width: 900px;
-    margin: 0 auto;
-    gap: 3rem;
-}
-
 .back-button-container {
     padding-top: 1.5rem;
 }
@@ -46,113 +37,86 @@ body {
     display: block;
 }
 
-/* CV Container with Left-Aligned Text */
-.cv-container {
+.resume-container {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto;
+    background: #fff;
     padding: 20px;
-    background-color: #fcf9f5;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 1%;
-    text-align: left; /* Set default text alignment to left */
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
-/* Centered Header Text */
-.cv-header {
-    padding-bottom: 20px;
-    border-bottom: 2px solid #333;
+/* Header */
+header {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.name {
-    font-size: 2em;
-    margin: 0;
-    color: #333;
-    text-align: center;
-}
-
-.title {
-    font-size: 1.2em;
-    color: #555;
-    margin: 5px 0;
-    text-align: center;
-}
-
-.contact-info {
-    font-size: 0.9em;
-    color: #777;
-    text-align: center;
-}
-
-/* Section Styles */
-section {
-    margin-top: 20px;
-}
-
-h2 {
-    color: #333;
-    font-size: 1.5em;
+header h1 {
+    font-size: 24px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 20px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-p {
-    margin: 10px 0;
+/* Experience Section */
+.job {
+    margin-bottom: 30px;
 }
 
-/* Experience and Education Styles */
-.job, .degree {
-    margin-bottom: 15px;
-}
-
-.job h3, .degree h3 {
-    font-size: 1.2em;
+.job h3 {
+    font-size: 18px;
     margin: 0;
-    color: #444;
+    color: #333;
 }
 
-.job-details, .institution, .dates {
-    font-size: 0.9em;
-    color: #666;
+.location {
+    font-size: 14px;
+    color: #777;
+    display: block;
+    margin-bottom: 10px;
 }
 
-ul {
+.job ul {
     list-style: disc;
     margin-left: 20px;
 }
 
-ul.skills-list {
+/* Skills Section */
+.skills ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
-.skills-list li {
-    background-color: #eee;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin: 5px;
-    font-size: 0.9em;
+.skills li {
+    margin-bottom: 10px;
 }
 
-.experience .company {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
+/* Education Section */
+.education ul {
+    list-style: none;
+    padding: 0;
 }
 
-.company-logo {
-    width: 30px; /* Adjust size as needed */
-    height: auto;
-    margin-right: 8px;
-}
-
-.company-name {
-    font-size: 0.9em; /* Slightly smaller than main font */
-    font-style: italic;
-    color: #555; /* Adjust color if needed */
+.education li {
+    margin-bottom: 10px;
 }
 
 
